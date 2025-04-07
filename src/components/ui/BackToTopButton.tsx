@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { Button } from '@nextui-org/button';
+import { Button } from '@heroui/button';
 
 const BackToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
