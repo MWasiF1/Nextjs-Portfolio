@@ -42,22 +42,26 @@ const ContactMe = () => {
           };
           setUserInfo(browserInfo);
         } catch (error) {
-          console.warn('Failed to fetch user info from ipapi.co:', error.message);
-          // Fallback user info if API fails
-          setUserInfo({
-            ip: 'N/A',
-            country: 'N/A',
-            city: 'N/A',
-            region: 'N/A',
-            timezone: 'N/A',
-            isp: 'N/A',
-            browser: navigator.userAgent,
-            platform: navigator.platform,
-            screenResolution: `${window.screen.width}x${window.screen.height}`,
-            os: navigator.platform,
-            chromeVersion: navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./)?.[2] || 'N/A',
-            domain: window.location.href,
-          });
+        if (error instanceof Error) {
+    console.warn('Failed to fetch user info from ipapi.co:', error.message);
+  } else {
+    console.warn('Failed to fetch user info from ipapi.co:', error);
+  }
+  // Fallback user info if API fails
+  setUserInfo({
+    ip: 'N/A',
+    country: 'N/A',
+    city: 'N/A',
+    region: 'N/A',
+    timezone: 'N/A',
+    isp: 'N/A',
+    browser: navigator.userAgent,
+    platform: navigator.platform,
+    screenResolution: `${window.screen.width}x${window.screen.height}`,
+    os: navigator.platform,
+    chromeVersion: navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./)?.[2] || 'N/A',
+    domain: window.location.href,
+  });
         }
       };
       fetchUserInfo();
