@@ -32,7 +32,6 @@
     "@mantine/carousel": "^7.17.1",
     "@mantine/core": "^7.17.1",
     "@mantine/hooks": "^7.17.1",
-    "@nextui-org/react": "^2.6.11",
     "@portabletext/react": "^3.2.1",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.16",
