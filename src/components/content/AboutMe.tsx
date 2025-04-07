@@ -29,7 +29,7 @@ const AboutMe = () => {
         Digital Wallet using <strong>Angular</strong>, <strong>Tailwind CSS</strong>, and <strong>RxJS</strong>. On
         the backend, I build and optimize <strong>RESTful APIs</strong> with <strong>Java Spring Boot</strong>,
         ensuring seamless data exchange and robust functionality. One of my proudest achievements? Integrating the
-        <strong>WhatsApp API</strong> to boost customer engagement through automated messaging.
+        <strong> WhatsApp API</strong> to boost customer engagement through automated messaging.
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
@@ -46,7 +46,7 @@ const AboutMe = () => {
         <strong>TypeScript</strong>, and <strong>SQL (Postgres)</strong>, and I work with frameworks such as
         <strong>React Native</strong>, <strong>Node.js</strong>, and <strong>Spring Boot</strong>. I leverage tools
         like <strong>Git</strong>, <strong>Docker</strong>, and <strong>VS Code</strong>, along with libraries like
-        <strong>Material-UI</strong> and <strong>Ng-Zoro</strong>, to deliver high-quality solutions. I thrive on
+        <strong> Material-UI</strong> and <strong>Ng-Zoro</strong> etc, to deliver high-quality solutions. I thrive on
         collaboration, problem-solving, and continuously learning to stay ahead in this ever-evolving field. If
         you’re up for building something innovative together, let’s connect!
       </p>

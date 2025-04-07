@@ -24,7 +24,7 @@ const Hero = () => {
 
         <h2 className="flex items-center gap-2 text-lg lg:text-xl text-gray-700 dark:text-gray-400 mb-8 mx-auto lg:mx-0">
           <span className="relative w-[max-content] font-mono typing-animation text-gray-800 dark:text-gray-200">
-            I'm a Software Engineer & Full Stack Developer
+            I'm a Software Engineer
           </span>
         </h2>
 
@@ -34,7 +34,7 @@ const Hero = () => {
             href={`mailto:${siteConfig.social.email}`}
             className="px-4 py-2 sm:px-6 sm:py-3 text-teal-500 font-bold rounded-lg border border-teal-500 hover:bg-teal-500 hover:text-white transition duration-300 backdrop-blur-sm bg-white/20 dark:bg-gray-800/30 dark:border-teal-300 dark:text-teal-300 dark:hover:bg-teal-600 dark:hover:text-white"
           >
-            Hire Me
+            Contact Me
           </Link>
         </div>
       </AnimationContainer>
