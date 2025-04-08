@@ -98,7 +98,6 @@ const ContactMe = () => {
       }`
     );
     const mailtoLink = `mailto:mianwasif.001@gmail.com?subject=${subject}&body=${body}`;
-
     // Open email client
     window.location.href = mailtoLink;
 
@@ -173,7 +172,7 @@ const ContactMe = () => {
               </div>
             </div>
 
-            <div>
+           <div>
               <Textarea
                 isClearable={true}
                 label="Message"
@@ -181,6 +180,8 @@ const ContactMe = () => {
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                onFocus={() => console.log('Textarea focused')}
+                className="focus:outline-none focus:ring-2 focus:ring-blue-500 caret-black dark:caret-white"
                 required
               />
             </div>

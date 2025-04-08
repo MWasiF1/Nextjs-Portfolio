@@ -24,7 +24,7 @@ const AboutMe = () => {
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        Currently, I’m an <strong>Associate Software Engineer</strong> at PostEx in Lahore, Pakistan, where I design
+        Currently, I’m an <strong>Software Engineer</strong> at PostEx in Lahore, Pakistan, where I design
         and develop responsive interfaces for platforms like the Merchant Portal, Backoffice, Partner Portal, and
         Digital Wallet using <strong>Angular</strong>, <strong>Tailwind CSS</strong>, and <strong>RxJS</strong>. On
         the backend, I build and optimize <strong>RESTful APIs</strong> with <strong>Java Spring Boot</strong>,
