@@ -69,49 +69,45 @@ const ContactMe = () => {
   }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    // Rate limiting logic
-    const lastSubmittedTime = sessionStorage.getItem('lastSubmittedTime');
-    const lastEmail = sessionStorage.getItem('lastEmail');
-    const currentTime = Date.now();
-    const rateLimit = siteConfig.contact.rateLimit;
-    const FIVE_MINUTES = rateLimit * 60 * 1000;
+  const lastSubmittedTime = sessionStorage.getItem('lastSubmittedTime');
+  const lastEmail = sessionStorage.getItem('lastEmail');
+  const currentTime = Date.now();
+  const rateLimit = siteConfig.contact.rateLimit;
+  const FIVE_MINUTES = rateLimit * 60 * 1000;
 
-    if (lastSubmittedTime && currentTime - parseInt(lastSubmittedTime) < FIVE_MINUTES) {
-      setIsWaiting(true);
-      setWaitTime(Math.ceil((FIVE_MINUTES - (currentTime - parseInt(lastSubmittedTime))) / 1000));
-      return;
-    }
+  if (lastSubmittedTime && currentTime - parseInt(lastSubmittedTime) < FIVE_MINUTES) {
+    setIsWaiting(true);
+    setWaitTime(Math.ceil((FIVE_MINUTES - (currentTime - parseInt(lastSubmittedTime))) / 1000));
+    return;
+  }
 
-    if (lastEmail && lastEmail !== email) {
-      setIsWaiting(true);
-      setWaitTime(Math.ceil(FIVE_MINUTES / 1000));
-      return;
-    }
+  if (lastEmail && lastEmail !== email) {
+    setIsWaiting(true);
+    setWaitTime(Math.ceil(FIVE_MINUTES / 1000));
+    return;
+  }
 
-    // Construct mailto link
-    const subject = encodeURIComponent(`Contact Form Submission from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}${
-        siteConfig.contact.debug ? `\nUser Info: ${JSON.stringify(userInfo, null, 2)}` : ''
-      }`
-    );
-    const mailtoLink = `mailto:mianwasif.001@gmail.com?subject=${subject}&body=${body}`;
-    // Open email client
-    window.location.href = mailtoLink;
+  const subject = encodeURIComponent(`Contact Form Submission from ${name}`);
+  const body = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+  );
+  const mailtoLink = `mailto:mianwasif.001@gmail.com?subject=${subject}&body=${body}`;
+  console.log('Generated mailto link:', mailtoLink);
 
-    // Simulate submission success
-    setTimeout(() => {
-      setIsSubmitted(true);
-      sessionStorage.setItem('lastSubmittedTime', currentTime.toString());
-      sessionStorage.setItem('lastEmail', email);
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
-    }, 500);
-  };
+  window.location.href = mailtoLink;
+
+  setTimeout(() => {
+    setIsSubmitted(true);
+    sessionStorage.setItem('lastSubmittedTime', currentTime.toString());
+    sessionStorage.setItem('lastEmail', email);
+    setName('');
+    setEmail('');
+    setPhone('');
+    setMessage('');
+  }, 500);
+};
 
   return (
     <AnimationContainer customClassName="w-full">
