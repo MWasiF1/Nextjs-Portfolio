@@ -29,11 +29,13 @@ body,
   transform: translate(-50%, -50%);
   z-index: 999999 !important;
   backdrop-filter: blur(1px);
-  background-color: #0000005e;
+  background-color: gray;
   transition:
     width 0.2s ease-in-out,
     height 0.2s ease-in-out;
   cursor: none !important;
+
+  
 }
 
 @media screen and (max-width: 768px) {
