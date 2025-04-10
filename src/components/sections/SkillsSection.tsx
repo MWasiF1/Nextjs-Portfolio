@@ -12,33 +12,37 @@ const MySkills = () => {
     { src: 'https://skillicons.dev/icons?i=react', alt: 'React', tooltip: 'React' },
     { src: 'https://skillicons.dev/icons?i=vue', alt: 'Vue', tooltip: 'Vue' },
     { src: 'https://skillicons.dev/icons?i=nextjs', alt: 'Next.js', tooltip: 'Next.js' },
+    { src: 'https://skillicons.dev/icons?i=wordpress', alt: 'WordPress', tooltip: 'WordPress' },
+    { src: 'https://skillicons.dev/icons?i=java', alt: 'Java', tooltip: 'Java' },
+    { src: 'https://skillicons.dev/icons?i=nodejs', alt: 'Node.js', tooltip: 'Node.js' },
+    { src: 'https://skillicons.dev/icons?i=mysql', alt: 'MySQL', tooltip: 'MySQL' },
+ { src: 'https://skillicons.dev/icons?i=firebase', alt: 'Firebase', tooltip: 'Firebase' },
+    { src: 'https://skillicons.dev/icons?i=mongodb', alt: 'MongoDB', tooltip: 'MongoDB' },
+      { src: 'https://skillicons.dev/icons?i=redux', alt: 'Redux', tooltip: 'Redux' },
+    { src: 'https://skillicons.dev/icons?i=regex', alt: 'Regex', tooltip: 'Regex' },
+     { src: 'https://skillicons.dev/icons?i=html', alt: 'HTML', tooltip: 'HTML' },
+     { src: 'https://skillicons.dev/icons?i=figma', alt: 'Figma', tooltip: 'Figma' },
+     { src: 'https://skillicons.dev/icons?i=css', alt: 'CSS', tooltip: 'CSS' },
+    { src: 'https://skillicons.dev/icons?i=sass', alt: 'Sass', tooltip: 'Sass' },
+   { src: 'https://skillicons.dev/icons?i=tailwind', alt: 'Tailwind CSS', tooltip: 'Tailwind CSS' },
     { src: 'https://skillicons.dev/icons?i=bootstrap', alt: 'Bootstrap', tooltip: 'Bootstrap' },
+   { src: 'https://skillicons.dev/icons?i=typescript', alt: 'TypeScript', tooltip: 'TypeScript' },
+    { src: 'https://skillicons.dev/icons?i=js', alt: 'JavaScript', tooltip: 'JavaScript' },
+    { src: 'https://skillicons.dev/icons?i=python', alt: 'Python', tooltip: 'Python' },
     { src: 'https://skillicons.dev/icons?i=cpp', alt: 'C++', tooltip: 'C++' },
-    { src: 'https://skillicons.dev/icons?i=css', alt: 'CSS', tooltip: 'CSS' },
-    { src: 'https://skillicons.dev/icons?i=figma', alt: 'Figma', tooltip: 'Figma' },
-    { src: 'https://skillicons.dev/icons?i=firebase', alt: 'Firebase', tooltip: 'Firebase' },
+    { src: 'https://skillicons.dev/icons?i=postman', alt: 'Postman', tooltip: 'Postman' },
     { src: 'https://skillicons.dev/icons?i=git', alt: 'Git', tooltip: 'Git' },
     { src: 'https://skillicons.dev/icons?i=github', alt: 'GitHub', tooltip: 'GitHub' },
-    { src: 'https://skillicons.dev/icons?i=html', alt: 'HTML', tooltip: 'HTML' },
-    { src: 'https://skillicons.dev/icons?i=java', alt: 'Java', tooltip: 'Java' },
-    { src: 'https://skillicons.dev/icons?i=js', alt: 'JavaScript', tooltip: 'JavaScript' },
-    { src: 'https://skillicons.dev/icons?i=mongodb', alt: 'MongoDB', tooltip: 'MongoDB' },
-    { src: 'https://skillicons.dev/icons?i=mysql', alt: 'MySQL', tooltip: 'MySQL' },
-    { src: 'https://skillicons.dev/icons?i=nodejs', alt: 'Node.js', tooltip: 'Node.js' },
-    { src: 'https://skillicons.dev/icons?i=redux', alt: 'Redux', tooltip: 'Redux' },
-    { src: 'https://skillicons.dev/icons?i=regex', alt: 'Regex', tooltip: 'Regex' },
-    { src: 'https://skillicons.dev/icons?i=sass', alt: 'Sass', tooltip: 'Sass' },
-    { src: 'https://skillicons.dev/icons?i=tailwind', alt: 'Tailwind CSS', tooltip: 'Tailwind CSS' },
     { src: 'https://skillicons.dev/icons?i=visualstudio', alt: 'Visual Studio', tooltip: 'Visual Studio' },
     { src: 'https://skillicons.dev/icons?i=vscode', alt: 'VS Code', tooltip: 'VS Code' },
-    { src: 'https://skillicons.dev/icons?i=wordpress', alt: 'WordPress', tooltip: 'WordPress' }
+   
   ];
 
   return (
     <AnimationContainer customClassName="w-full mt-16">
       <div className="flex flex-col gap-5">
         <SectionHeader
-          title="Skills"
+          title="Skills & Tools"
           content="I’ve been programming for over years, gaining experience with a variety of programming languages, frameworks, and tools. I’ve worked on both Frontend and Backend technologies, allowing me to understand and contribute to the entire development process."
         />
 
