@@ -20,23 +20,37 @@ const LinksMenu = [
   },
   {
     name: 'Blog',
-    path: '/blog',
-    delay: '225ms'
+    path: 'https://medium.com/@mianwasif.001', // Updated to Medium profile URL
+    delay: '225ms',
+    external: true // Mark as an external link
   }
 ];
 
 const LinksMenuNav = () => {
   return (
     <>
-      {LinksMenu.map(({ name, path, delay }) => (
+      {LinksMenu.map(({ name, path, delay, external }) => (
         <li
           key={name}
           className="border-gray-700 text-black dark:text-white text-sm font-semibold"
           style={{ transitionDelay: delay }}
         >
-          <Link href={path} className="pb-4">
-            {name}
-          </Link>
+          {external ? (
+            // Handle external links (e.g., Blog)
+            <a
+              href={path}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pb-4"
+            >
+              {name}
+            </a>
+          ) : (
+            // Handle internal links
+            <Link href={path} className="pb-4">
+              {name}
+            </Link>
+          )}
         </li>
       ))}
     </>
