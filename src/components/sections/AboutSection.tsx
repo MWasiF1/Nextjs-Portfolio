@@ -8,6 +8,7 @@ import Link from 'next/link';
 import ContactMe from '@/src/components/content/ContactMe';
 import FAQSection from '@/src/components/sections/FAQSection';
 import SkillsSection from '@/src/components/sections/SkillsSection';
+import Education from '@/src/components/content/Education';
 
 const AboutSection = () => {
   return (
@@ -17,10 +18,9 @@ const AboutSection = () => {
 
         <AnimationContainer customClassName="w-full flex flex-col gap-5 mb-8">
           <p className="text-base text-gray-600 dark:text-gray-400">
-            Hey there! 👋 I'm <strong>{siteConfig.author}</strong>, a Full Stack
-            developer passionate about crafting dynamic and user-friendly
-            solutions. I’m currently shaping seamless digital experiences at
-            PostEx, and I’ve shared some of my work on my{' '}
+            Hey there! 👋 I&apos;m <strong>{siteConfig.author}</strong>, a{' '}
+            <strong>Full-Stack Software Engineer</strong> with 2 years of experience building production
+            fintech and logistics systems at PostEx. I&apos;ve shared some of my work on my{' '}
             <Link
               href={`https://github.com/${siteConfig.social.github}`}
               target="_blank"
@@ -29,48 +29,48 @@ const AboutSection = () => {
             >
               GitHub profile
             </Link>{' '}
-            —check it out! ✌️
+            — check it out! ✌️
           </p>
 
           <ul className="text-base text-gray-600 dark:text-gray-400 list-disc pl-6 space-y-2 mt-4">
             <li>
-              ✨ I enjoy spending my spare time building apps and experimenting
-              with tools like <strong>Angular</strong>, <strong>React</strong>,
-              and <strong>Spring Boot</strong> to sharpen my skills and explore
-              new possibilities.
+              🏦 I build cloud-native fintech platforms — including a <strong>BNPL credit system</strong>,{' '}
+              <strong>Lending Management System</strong>, and <strong>Raast QR payment integration</strong>{' '}
+              (ISO 20022) serving production workloads across 6 major cities.
             </li>
             <li>
-              📚 I’m diving deeper into modern technologies, working with{' '}
-              <strong>TypeScript</strong>, <strong>Node.js</strong>, and{' '}
-              <strong>Docker</strong>, while keeping an eye on emerging trends
-              to stay ahead of the curve.
+              🔭 My core stack is <strong>TypeScript</strong>, <strong>Angular 17</strong>,{' '}
+              <strong>Node.js</strong>, and <strong>Java Spring Boot</strong> — with event-driven
+              architecture using <strong>RabbitMQ</strong> and <strong>Amazon SQS</strong>.
             </li>
             <li>
-              🤝 Collaboration is my jam! Whether it’s integrating APIs (like
-              the <strong>WhatsApp API</strong> I worked on) or brainstorming
-              fresh ideas, I’m always excited to team up on innovative projects.
+              📊 I&apos;ve implemented distributed observability with the <strong>ELK Stack</strong>{' '}
+              (Elasticsearch, Logstash, Kibana) and GELF across 6 microservices — cutting incident
+              diagnosis time by ~50%.
             </li>
             <li>
-              🔧 My toolkit includes <strong>Java</strong>, <strong>C++</strong>,{' '}
-              <strong>JavaScript</strong>, and frameworks like{' '}
-              <strong>React Native</strong> and <strong>Tailwind CSS</strong>,
-              making me adaptable to diverse tech stacks.
+              🤝 Collaboration is at the core of what I do — whether aligning fintech, logistics, and
+              payments teams or using <strong>GitHub Copilot</strong> and LLMs to accelerate team
+              workflows.
             </li>
             <li>
-              📬 Spotted something cool in my projects or have an idea you’d
-              like to bring to life? Reach out—I’d love to create something
-              awesome together!
+              🏆 Awarded <strong>Emerging Star of the Year 2025</strong> in the Engineering Department
+              at PostEx for high-impact contributions across fintech and logistics portfolios.
             </li>
           </ul>
 
           <p className="text-base text-gray-600 dark:text-gray-400 mt-4">
-            Explore my work, and let’s connect for collaborations or just to
-            geek out about tech!
+            Explore my work, and let&apos;s connect for collaborations or just to geek out about
+            distributed systems and payments!
           </p>
         </AnimationContainer>
 
         <AnimationContainer customClassName="w-full">
           <CurrentTimeLineExp />
+        </AnimationContainer>
+
+        <AnimationContainer customClassName="w-full mt-8">
+          <Education />
         </AnimationContainer>
 
         <AnimationContainer customClassName="w-full">

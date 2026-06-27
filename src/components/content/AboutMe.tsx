@@ -10,45 +10,53 @@ const AboutMe = () => {
       <SectionHeader
         id="aboutme"
         title="About Me"
-        content={`Here is a little bit about me and my journey as a developer.`}
+        content="Here is a little bit about me and my journey as a software engineer."
       />
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white">
-        Hey there! 👋 I'm{' '}
+        Hey there! 👋 I&apos;m{' '}
         <strong className="text-foreground dark:text-white">
           {siteConfig.author}
         </strong>
-        , a passionate Full Stack developer with a knack for building dynamic and user-friendly solutions. My
-        coding journey kicked off with a curiosity for technology, which has since evolved into a career where I
-        blend creativity and technical expertise to craft impactful applications.
+        , a <strong>Full-Stack Software Engineer</strong> with 2 years of experience designing and shipping
+        cloud-native fintech and logistics platforms at scale. I specialize in building production-grade
+        systems in <strong>TypeScript</strong>, <strong>Java Spring Boot</strong>, <strong>Angular</strong>,
+        and <strong>Node.js</strong> — with strong foundations in microservices architecture, distributed
+        observability, and event-driven design.
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        Currently, I’m an <strong>Software Engineer</strong> at PostEx in Lahore, Pakistan, where I design
-        and develop responsive interfaces for platforms like the Merchant Portal, Backoffice, Partner Portal, and
-        Digital Wallet using <strong>Angular</strong>, <strong>Tailwind CSS</strong>, and <strong>RxJS</strong>. On
-        the backend, I build and optimize <strong>RESTful APIs</strong> with <strong>Java Spring Boot</strong>,
-        ensuring seamless data exchange and robust functionality. One of my proudest achievements? Integrating the
-        <strong> WhatsApp API</strong> to boost customer engagement through automated messaging.
+        At <strong>PostEx</strong> in Lahore, I&apos;ve led end-to-end development of a{' '}
+        <strong>BNPL (Buy Now, Pay Later) credit platform</strong> and{' '}
+        <strong>Lending Management System</strong> serving 1,000+ merchants, and was a core contributor to
+        PostEx&apos;s <strong>Digital QR (DQR) Payment on Delivery</strong> system — integrating{' '}
+        <strong>Raast QR</strong> (State Bank of Pakistan&apos;s ISO 20022 instant payment rail) into
+        PostEx&apos;s COD collection flow across 6 major cities. I&apos;ve also designed distributed tracing
+        infrastructure across 6 production microservices using the <strong>ELK Stack</strong> and{' '}
+        <strong>GELF</strong>, reducing mean time to diagnose incidents by ~50%.
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        My journey began as a <strong>Trainee FrontEnd Developer</strong> at Algorydhem Developers in Sheikhupura,
-        where I honed my skills in <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>,
-        <strong>JavaScript</strong>, and <strong>React.js</strong>. I built fully responsive websites, optimized
-        UI/UX, and even explored unique challenges like studying video game dungeon generation techniques for a
-        human subject study. This experience solidified my foundation in frontend development and sparked my
-        interest in full-stack technologies.
+        Before PostEx, I started as a <strong>Frontend Developer Intern</strong> at Algorydhem Developers,
+        where I built responsive web applications with <strong>React.js</strong>, established reusable
+        component libraries, and improved page load times by 20% through rendering optimizations.
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        My tech stack is diverse—I’m proficient in languages like <strong>Java</strong>, <strong>C++</strong>,
-        <strong>TypeScript</strong>, and <strong>SQL (Postgres)</strong>, and I work with frameworks such as
-        <strong>React Native</strong>, <strong>Node.js</strong>, and <strong>Spring Boot</strong>. I leverage tools
-        like <strong>Git</strong>, <strong>Docker</strong>, and <strong>VS Code</strong>, along with libraries like
-        <strong> Material-UI</strong> and <strong>Ng-Zoro</strong> etc, to deliver high-quality solutions. I thrive on
-        collaboration, problem-solving, and continuously learning to stay ahead in this ever-evolving field. If
-        you’re up for building something innovative together, let’s connect!
+        My stack spans <strong>TypeScript</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, and{' '}
+        <strong>C++</strong> on the language side; <strong>Angular</strong>, <strong>React</strong>, and{' '}
+        <strong>React Native</strong> on the frontend; <strong>Node.js</strong>,{' '}
+        <strong>Express.js</strong>, and <strong>Spring Boot</strong> on the backend; and{' '}
+        <strong>RabbitMQ</strong>, <strong>Amazon SQS</strong>, and <strong>Pusher</strong> for messaging.
+        I&apos;m comfortable with <strong>AWS (SQS, EC2)</strong>, <strong>Docker</strong>, and CI/CD
+        pipelines, and I actively leverage AI-assisted development tools — GitHub Copilot, Cursor, and LLMs
+        — to accelerate engineering workflows.
+      </p>
+
+      <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
+        🏆 I was awarded <strong>Emerging Star of the Year 2025</strong> in the Engineering Department at
+        PostEx for high-impact contributions across the fintech and logistics portfolios. If you&apos;re
+        building something ambitious in fintech, payments, or distributed systems — let&apos;s connect!
       </p>
     </AnimationContainer>
   );

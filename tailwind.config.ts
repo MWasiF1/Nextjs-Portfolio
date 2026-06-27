@@ -70,7 +70,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ['var(--font-graphik)', ...defaultTheme.fontFamily.sans]
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        display: ['var(--font-jakarta)', ...defaultTheme.fontFamily.sans]
       },
       typography: (theme: (arg0: string) => any) => ({
         DEFAULT: {

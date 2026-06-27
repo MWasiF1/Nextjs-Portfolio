@@ -43,9 +43,9 @@ export const siteConfig: {
 
   },
   metadata: {
-    description: `Hi! I'm Muhammad Wasif, a Full Stack developer passionate about building apps, exploring AI and ML, and collaborating on exciting projects. Let's connect!`,
+    description: `Hi! I'm Muhammad Wasif, a Full-Stack Software Engineer with 2+ years of experience building cloud-native fintech and logistics platforms at PostEx. I ship production systems in TypeScript, Java Spring Boot, Angular, and Node.js — including a BNPL credit platform, Raast QR payment integration, and event-driven microservices serving thousands of merchants. Awarded Emerging Star of the Year 2025.`,
     keywords:
-      'Muhammad Wasif, Full Stack Developer, Muhammad Wasif portfolio, Muhammad Wasif GitHub, Web Development, Mobile Applications, Machine Learning, Artificial Intelligence, Programming Languages, Open Source Developer, App Development',
+      'Muhammad Wasif, Full Stack Software Engineer, Muhammad Wasif portfolio, Muhammad Wasif GitHub, TypeScript, Java, Spring Boot, Angular, Node.js, BNPL, fintech, logistics, microservices, Raast, RabbitMQ, Amazon SQS, ELK Stack, React, React Native, MongoDB, MySQL, PostEx, Web Development, API Development, Agile Scrum',
     type: 'website'
   },
   chatbot: {

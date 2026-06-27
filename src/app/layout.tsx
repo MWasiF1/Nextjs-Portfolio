@@ -2,7 +2,7 @@
 
 import '@/src/styles/globals.css';
 import clsx from 'clsx';
-import local from 'next/font/local';
+import { Plus_Jakarta_Sans, Inter } from 'next/font/google';
 import Header from '@/src/components/ui/Header';
 import Footer from '@/src/components/ui/Footer';
 import FlareCursor from '@/src/components/ui/FlareCursor';
@@ -17,26 +17,22 @@ import BackToTopButton from '@/src/components/ui/BackToTopButton';
 import dynamic from 'next/dynamic';
 import React from 'react';
 
-// Dynamically import the Chatbot component with ssr: false (render only client-side)
 const Chatbot = dynamic(() => import('@/src/components/ui/ChatBot'), {
   ssr: false
 });
 
-const graphik = local({
-  src: [
-    {
-      path: '../../public/fonts/Graphik-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/Graphik-Medium.ttf',
-      weight: '600',
-      style: 'bold'
-    }
-  ],
-  variable: '--font-graphik',
-  display: 'swap' // Ensures text is visible while the font loads
+const jakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-jakarta',
+  display: 'swap'
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-inter',
+  display: 'swap'
 });
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -45,19 +41,17 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       lang="en"
       className={clsx(
         'text-foreground bg-background dark:text-foreground dark:bg-background transition ease-in-out',
-        graphik.variable
+        jakartaSans.variable,
+        inter.variable
       )}
     >
       <Head />
 
-      <body className="transition ease-in-out min-h-screen">
+      <body className={clsx('transition ease-in-out min-h-screen', inter.className)}>
         <HeroUIProvider>
           <ThemeProvider>
             <SessionProvider>
-              {/* Show progress bar during loading */}
               <ProgressBar />
-
-              {/* Main layout structure */}
               <Header />
 
               <main className="flex flex-col justify-center items-center mx-auto">

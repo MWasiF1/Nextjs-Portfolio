@@ -10,21 +10,16 @@ import ThemeToggle from '@/src/components/utils/ThemeToggle';
 const Header = () => {
   return (
     <HeaderAnimation>
-      <nav className="w-10/12 lg:max-w-screen-md flex items-center justify-between flex-row relative py-8 sm:pb-8 bg-primary text-foreground dark:text-white gap-5 lg:gap-0">
+      <nav className="w-10/12 lg:max-w-screen-md flex items-center justify-between flex-row relative py-4 sm:py-5 text-foreground dark:text-white gap-5 lg:gap-0">
         <div>
-          <h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold">
-            <Link
-              href="/"
-              className="hover:text-foreground dark:hover:text-white"
-            >
-              <strong className="text-foreground dark:text-white">
-                {siteConfig.author}
-              </strong>
-            </Link>
-          </h1>
+          <Link href="/" className="group flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-indigo-500 group-hover:shadow-[0_0_8px_rgba(99,102,241,0.8)] transition-all duration-300" />
+            <h1 className="text-sm sm:text-base font-semibold font-display text-foreground dark:text-white hover:text-indigo-400 dark:hover:text-indigo-400 transition-colors duration-200">
+              {siteConfig.author}
+            </h1>
+          </Link>
         </div>
 
-        {/* Navigation Section */}
         <div className="ml-[-0.80rem] flex items-center gap-4">
           <MobileMenuNav />
           <NavItem />

@@ -14,33 +14,40 @@ export const generateMetadata = ({
 }: MetadataParams) => {
   const titlePrefix = siteConfig.titlePrefix || '';
   const fullPath = `${siteConfig.baseUrl}${path}`;
-  const pageTitle = title ? ` ${title} · ${titlePrefix}` : titlePrefix;
+  const pageTitle = title
+    ? `${title} · ${titlePrefix}`
+    : `${titlePrefix} — Full-Stack Software Engineer`;
+
+  const metaDescription =
+    description ||
+    siteConfig.metadata.description;
 
   return {
     title: pageTitle,
-    description: description || siteConfig.metadata.description,
+    description: metaDescription,
     keywords: siteConfig.metadata.keywords,
     url: fullPath,
     type: siteConfig.metadata.type,
     openGraph: {
       title: pageTitle,
-      description: description || siteConfig.metadata.description,
+      description: metaDescription,
       url: fullPath,
       type: siteConfig.metadata.type,
       site_name: titlePrefix,
+      image: `${siteConfig.baseUrl}/img/og-preview.png`
     },
     twitter: {
       title: pageTitle,
-      description: description || siteConfig.metadata.description,
-      card: 'summary_large_image',
+      description: metaDescription,
+      card: 'summary_large_image'
     },
     alternates: {
-      canonical: fullPath // Adding canonical URL
+      canonical: fullPath
     },
     link: [
       {
         rel: 'icon',
-        href: '/favicon.ico' // Icon link
+        href: '/favicon.ico'
       }
     ]
   };
