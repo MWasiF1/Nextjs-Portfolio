@@ -23,15 +23,37 @@ const Head = () => {
       jobTitle: 'Full-Stack Software Engineer',
       worksFor: {
         '@type': 'Organization',
-        name: 'PostEx'
+        name: 'PostEx',
+        url: 'https://postex.pk'
       },
       alumniOf: {
         '@type': 'EducationalOrganization',
         name: 'GC University Lahore'
       },
+      award: 'Emerging Star of the Year 2025, PostEx Engineering',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Lahore',
+        addressCountry: 'PK'
+      },
+      knowsAbout: [
+        'Fintech',
+        'Payment Systems',
+        'Raast QR',
+        'BNPL',
+        'Microservices',
+        'Event-Driven Architecture',
+        'Distributed Observability',
+        'TypeScript',
+        'Java Spring Boot',
+        'Angular',
+        'Node.js',
+        'AI-Assisted Software Development'
+      ],
       sameAs: [
         siteConfig.social.linkedin,
-        `https://github.com/${siteConfig.social.github}`
+        `https://github.com/${siteConfig.social.github}`,
+        siteConfig.social.medium
       ]
     };
 

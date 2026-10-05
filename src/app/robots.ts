@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { siteConfig } from '@/src/configs/config';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -12,6 +13,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'ia_archiver', // Block Internet Archive (Wayback Machine)
         disallow: '/' // Disallow access to all pages
       }
-    ]
+    ],
+    sitemap: `${siteConfig.baseUrl}/sitemap.xml`
   };
 }

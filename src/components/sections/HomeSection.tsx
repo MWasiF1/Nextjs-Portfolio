@@ -8,7 +8,6 @@ import Education from '../content/Education';
 import AnimationContainer from '../utils/AnimationContainer';
 import SectionContainer from '../utils/SectionContainer';
 import FAQSection from '@/src/components/sections/FAQSection';
-import StatsSection from '@/src/components/sections/StatsSection';
 import SkillsSection from '@/src/components/sections/SkillsSection';
 
 const HomeSection = () => {
@@ -39,10 +38,6 @@ const HomeSection = () => {
         <SkillsSection />
       </AnimationContainer>
 
-      {/* Stats Section */}
-      <AnimationContainer customClassName="w-full mt-16">
-        <StatsSection />
-      </AnimationContainer>
 
       {/* Contact Section */}
       <AnimationContainer customClassName="w-full mt-16">

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-const LinksMenu = [
+const LinksMenu: { name: string; path: string; delay: string; external?: boolean }[] = [
   {
     name: 'Home',
     path: '/',
@@ -20,9 +20,8 @@ const LinksMenu = [
   },
   {
     name: 'Blog',
-    path: 'https://medium.com/@mianwasif.001', // Updated to Medium profile URL
-    delay: '225ms',
-    external: true // Mark as an external link
+    path: '/blog',
+    delay: '225ms'
   }
 ];
 

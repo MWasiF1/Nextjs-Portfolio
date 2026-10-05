@@ -29,8 +29,8 @@ export const siteConfig: {
     type: string;
   };
 } = {
-  baseUrl: 'https://muhammadwasif.com',
-  domain: 'muhammadwasif.com',
+  baseUrl: 'https://wasif-portfolio-eight.vercel.app',
+  domain: 'wasif-portfolio-eight.vercel.app',
   author: 'Muhammad Wasif',
   author_surname: 'Wasif',
   titlePrefix: 'Muhammad Wasif',

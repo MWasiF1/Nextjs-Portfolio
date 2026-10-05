@@ -1,0 +1,17 @@
+# Muhammad Wasif
+
+> Full-Stack Software Engineer at PostEx (Lahore, Pakistan) specializing in fintech, payment systems, and event-driven microservices. Works with TypeScript, Java Spring Boot, Angular, and Node.js, and uses AI-assisted development tools (GitHub Copilot, Cursor, LLM code review) in his daily workflow. Awarded Emerging Star of the Year 2025 at PostEx Engineering.
+
+## Highlights
+- Core contributor to PostEx's Raast QR Payment on Delivery integration (State Bank of Pakistan instant payments), live in 6 cities
+- Built a BNPL and Lending Management System serving 1,000+ merchants
+- Implemented ELK-based distributed tracing across 6 microservices, cutting incident diagnosis time by ~50%
+
+## Profiles
+- [GitHub](https://github.com/MWasiF1)
+- [LinkedIn](https://www.linkedin.com/in/muhammad-wasif001)
+- [Medium](https://medium.com/@mianwasif.001)
+- [Portfolio](https://wasif-portfolio-eight.vercel.app/)
+
+## Contact
+- Email: mianwasif.001@gmail.com

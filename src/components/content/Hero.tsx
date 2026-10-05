@@ -90,8 +90,8 @@ const Hero = () => {
       <AnimationContainer customClassName="w-[150px] sm:w-[260px] relative mb-8 lg:mb-0 shrink-0">
         <div className="relative rounded-2xl overflow-hidden ring-2 ring-indigo-500/30 hover:ring-indigo-500/60 transition-all duration-300 hover:shadow-[0_0_30px_rgba(99,102,241,0.3)]">
           <Image
-            alt={siteConfig.author}
-            src="/img/WhatsApp Image 2025-04-07 at 11.37.32 AM.jpeg"
+            alt="Muhammad Wasif, Full-Stack Software Engineer at PostEx"
+            src="/img/muhammad-wasif.jpg"
             width={260}
             height={260}
             priority

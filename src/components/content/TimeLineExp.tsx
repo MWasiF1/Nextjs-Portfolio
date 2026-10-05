@@ -10,7 +10,7 @@ export const Timeline = ({ children }: { children: React.ReactNode }) => {
     <AnimationContainer customClassName="w-full mb-16">
       <SectionHeader
         title="Experience"
-        content="I’ve had the opportunity to gain valuable experience as a software developer, both as a freelancer and as an open-source contributor. Below is a summary of my work and the skills I've developed along the way."
+        content="Where I've worked and what I've shipped, from frontend internship to building production payment and lending systems at PostEx."
       />
 
       {children}

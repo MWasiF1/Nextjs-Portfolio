@@ -104,7 +104,7 @@ const Chatbot = () => {
 
     if (messages.length === 0) {
       const initialMessage = {
-        text: 'Hello, how can I assist you today?',
+        text: "Hi! I'm an AI assistant that can answer questions about Muhammad Wasif's experience, projects, and skills. What would you like to know?",
         sender: 'bot'
       };
       setMessages([initialMessage]);

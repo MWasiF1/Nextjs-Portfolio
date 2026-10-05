@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://github.com/MWasiF1.com',
+  siteUrl: process.env.SITE_URL || 'https://wasif-portfolio-eight.vercel.app',
   generateRobotsTxt: false, // due to already generate by nextjs
   generateIndexSitemap: true, // (optional)
   additionalSitemaps: [
